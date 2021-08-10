@@ -5,6 +5,8 @@ import src.service.Sound;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class MainFrame extends JFrame {
 
@@ -27,5 +29,17 @@ public class MainFrame extends JFrame {
         GamePanel panel = new GamePanel();
         c.add(panel);
         addKeyListener(panel);
+        c.validate();
+    }
+
+    /**
+     *
+     */
+    private void addListener(){
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e){
+                ScoreRecorder.saveScore();
+            }
+        });
     }
 }
