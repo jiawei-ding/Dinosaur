@@ -1,5 +1,7 @@
 package src.module;
 
+import src.service.Sound;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
