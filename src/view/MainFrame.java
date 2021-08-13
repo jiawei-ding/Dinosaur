@@ -25,7 +25,7 @@ public class MainFrame extends JFrame {
      */
     public void restart(){
         Container c=getContentPane();
-        c.removeALL();
+        c.removeAll();
         GamePanel panel = new GamePanel();
         c.add(panel);
         addKeyListener(panel);
