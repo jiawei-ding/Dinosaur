@@ -23,7 +23,7 @@ public class ScoreDialog extends JDialog {
         JLabel first=new JLabel("第一名："+ scores[2],JLabel.CENTER);
         JLabel second=new JLabel("第二名："+scores[1],JLabel.CENTER);
         JLabel third=new JLabel("第三名："+scores[1],JLabel.CENTER);
-        JButton restart=new JButton("重新开始")；
+        JButton restart=new JButton("重新开始");
         restart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

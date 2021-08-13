@@ -33,7 +33,7 @@ public class Obstacle {
 
         x=800;
         y=200-image.getHeight();
-        speed= BackgroundImage.SPEED;
+        speed= src.view.BackgroundImage.SPEED;
     }
 
     public void move(){
