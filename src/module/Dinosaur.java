@@ -1,5 +1,6 @@
 package src.module;
 
+import src.service.FreshThread;
 import src.service.Sound;
 
 import javax.imageio.ImageIO;
@@ -16,8 +17,7 @@ public class Dinosaur {
     private int stepTimer=0;
     private final int JUMP_HIGHT=100;
     private final int LOWEST_Y=120;
-    private Dinosaur FreshThread;
-    private final int FREASH=FreshThread.FREASH;
+    private final int FREASH= FreshThread.FREASH;
 
     public Dinosaur(){
         x=50;
@@ -61,7 +61,7 @@ public class Dinosaur {
             if(y>=LOWEST_Y){
                 jumpValue=-4;
             }
-            if(y<=LOWEST_Y){
+            if(y<=LOWEST_Y-JUMP_HIGHT){
                 jumpValue=4;
             }
             y+=jumpValue;
